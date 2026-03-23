@@ -202,7 +202,6 @@ body {
   padding: 0 120px 120px 5%;
   background: url("./images/BG-2.jpg") no-repeat center center;
   background-size: cover;
-  /* background-attachment: fixed;  */
   text-align: center;
   overflow: hidden;
 }
@@ -360,7 +359,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-width: 400px;
-  transform: translateY(-40px); 
+  transform: translateY(-40px);
 }
 
 .main-circle-wrapper {
@@ -379,13 +378,14 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  padding: 6px;
+  padding: 5px;
 
   background: conic-gradient(
-    #59afc9 0% 30%,
-    transparent 30% 60%,
-    #59afc9 60% 90%,
-    transparent 90% 100%
+    from 275deg,
+    #59afc9 0% 25%,
+    transparent 25% 50%,
+    #59afc9 50% 75%,
+    transparent 75% 100%
   );
 
   -webkit-mask:
@@ -397,17 +397,10 @@ body {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 
-  animation: spinBorder 10s linear infinite;
+  /* animation: spinBorder 10s linear infinite; */
 }
 
-@keyframes spinBorder {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 .main-circle-wrapper img {
   width: 92%;
@@ -431,7 +424,7 @@ body {
 }
 
 .specialty-text h4 {
-  color: #59afc9;
+  color: #151414;
   font-size: 1.1rem;
   margin: 3px 0 15px;
   font-weight: 600;
@@ -439,18 +432,101 @@ body {
 
 .specialty-text p {
   font-size: 1rem;
-  color: #666;
+  color: #1a233a;
   line-height: 1.1;
 }
 
-/* Fade in effect for the image swap */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
+
+/* Ability Section */
+
+.ability-section {
+    padding: 200px 12%;
+    background: url("./images/BG-3.jpg") no-repeat  ;
+    background-size: cover;
+    direction: rtl;
+    min-height: 100vh;
+    
+}
+
+.ability-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.ability-info {
+     flex: 1;
+  min-width: 350px;
+  text-align: center;
+    
+
+}
+
+.ability-main-title {
+    font-size: 5rem;
+    color: #1a233a;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.ability-nav-list {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.ability-nav-item {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.5;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.ability-nav-item.active {
     opacity: 1;
-    transform: scale(1);
-  }
+    border-color: #59afc9;
+    transform: scale(1.1);
+}
+
+.ability-nav-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ability-display {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+    text-align: center;
+}
+
+.ability-image-frame {
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.ability-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+.ability-subtitle {
+    font-size: 1.8rem;
+    color: #1a233a;
+    margin: 20px 0 10px;
+    font-weight: 700;
+    text-align: center;
 }
