@@ -1,8 +1,10 @@
 {
+    // --- UI Element Selectors ---
     const expNavItems = document.querySelectorAll(".exp-nav-item");
     const expSubtitle = document.getElementById("expSubtitle");
     const expText = document.getElementById("expText");
 
+    // --- Content Repository ---
     const expContent = [
         {
             t: "تخصصك",
@@ -18,20 +20,24 @@
         }
     ];
 
+    // --- Tab Switching Logic & Click Event Handling ---
     expNavItems.forEach((item, idx) => {
         item.addEventListener("click", () => {
+            // Update Active State for Tabs
             expNavItems.forEach(nav => nav.classList.remove("active"));
             item.classList.add("active");
 
+            // Trigger Fade-out transition
             expSubtitle.style.opacity = 0;
             expText.style.opacity = 0;
 
+            // Swap content and fade back in after transition delay
             setTimeout(() => {
                 expSubtitle.innerText = expContent[idx].t;
                 expText.innerText = expContent[idx].d;
                 expSubtitle.style.opacity = 1;
                 expText.style.opacity = 1;
-            }, 300);
+            }, 300); // Wait for 300ms to ensure smooth transition
         });
     });
 }
