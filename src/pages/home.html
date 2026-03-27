@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header
+      class="main-header sticky top-0 z-[1000] flex items-center justify-between bg-[#151414] px-[5%] py-2.5 shadow-[0_4px_15px_rgba(0,0,0,0.5)] dir-rtl"
+    >
+      <div href="./home.html" class="logo flex items-center cursor-pointer">
+        <div
+          class="logo-text flex flex-col text-right text-white text-[28px] font-bold leading-none"
+        >
+          <span>Nawah</span>
+          <span>Project</span>
+        </div>
+        <img
+          src="../css/images/logo/image.png"
+          alt="Logo"
+          class="w-20 h-auto"
+        />
+      </div>
+
+      <div class="left-side-wrapper flex items-center gap-10">
+        <nav class="nav-menu">
+          <ul class="flex items-center gap-[15px]">
+            <li>
+              <a
+                href="../pages/specializations.html"
+                class="group relative flex items-center gap-1.25 rounded-lg px-3 py-2 text-[0.95rem] text-[#e0e0e0] transition-all duration-300 hover:bg-[#2a2a2a] hover:text-white"
+              >
+                نظرة عامة علي المكان
+                <span
+                  class="absolute -bottom-4 left-1/2 h-[5px] w-0 -translate-x-1/2 rounded-full bg-[#59afc9] shadow-[0_0_8px_rgba(89,175,201,0.4)] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./news.html"
+                class="group relative flex items-center gap-1.25 rounded-lg px-3 py-2 text-[0.95rem] text-[#e0e0e0] transition-all duration-300 hover:bg-[#2a2a2a] hover:text-white"
+              >
+                الأخبار
+                <span
+                  class="absolute -bottom-4 left-1/2 h-[5px] w-0 -translate-x-1/2 rounded-full bg-[#59afc9] shadow-[0_0_8px_rgba(89,175,201,0.4)] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="group relative flex items-center gap-1.25 rounded-lg px-3 py-2 text-[0.95rem] text-[#e0e0e0] transition-all duration-300 hover:bg-[#2a2a2a] hover:text-white"
+              >
+                تخصصات
+                <span
+                  class="absolute -bottom-4 left-1/2 h-[5px] w-0 -translate-x-1/2 rounded-full bg-[#59afc9] shadow-[0_0_8px_rgba(89,175,201,0.4)] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="group relative flex items-center gap-1.25 rounded-lg px-3 py-2 text-[0.95rem] text-[#e0e0e0] transition-all duration-300 hover:bg-[#2a2a2a] hover:text-white"
+              >
+                اعثر علي تخصصك
+                <i class="fa-solid fa-square-arrow-up-right text-[#4d4b4b]"></i>
+                <span
+                  class="absolute -bottom-4 left-1/2 h-[5px] w-0 -translate-x-1/2 rounded-full bg-[#59afc9] shadow-[0_0_8px_rgba(89,175,201,0.4)] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="group relative flex items-center gap-1.25 rounded-lg px-3 py-2 text-[0.95rem] text-[#e0e0e0] transition-all duration-300 hover:bg-[#2a2a2a] hover:text-white"
+              >
+                الدعم
+                <i class="fa-solid fa-square-arrow-up-right text-[#4d4b4b]"></i>
+                <span
+                  class="absolute -bottom-4 left-1/2 h-[5px] w-0 -translate-x-1/2 rounded-full bg-[#59afc9] shadow-[0_0_8px_rgba(89,175,201,0.4)] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="group relative flex items-center gap-1.25 rounded-lg px-3 py-2 text-[0.95rem] text-[#e0e0e0] transition-all duration-300 hover:bg-[#2a2a2a] hover:text-white"
+              >
+                اجتماعي
+                <i class="fa-solid fa-caret-down fa-xs text-[#4d4b4b]"></i>
+                <span
+                  class="absolute -bottom-4 left-1/2 h-[5px] w-0 -translate-x-1/2 rounded-full bg-[#59afc9] shadow-[0_0_8px_rgba(89,175,201,0.4)] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="user-information flex items-center gap-5">
+          <div class="Accunts">
+            <a
+              href="#"
+              class="text-[#e0e0e0] transition-colors duration-300 hover:text-[#59afc9]"
+            >
+              <i class="fa-solid fa-globe"></i>
+            </a>
+          </div>
+          <button
+            class="dropdown flex items-center gap-2 rounded-md border border-[#333] bg-[#212020] px-[22px] py-2 text-base font-bold text-white transition-colors duration-300 hover:bg-[#4d4b4b]"
+          >
+            <i class="fa-solid fa-caret-down fa-xs text-[#aca6a6a9]"></i>
+            حسابي
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- gif-section -->
+    <section class="gif-section">
+      <div class="relative w-full overflow-hidden gif-container">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="block w-full h-full object-cover learning-gif"
+        >
+          <source src="../css/images/theweb1.mp4" type="video/mp4" />
+          متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+
+        <a
+          href=""
+          class="border-4 border-white absolute top-[60%] left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 bg-[#123] text-white px-[35px] py-[15px] text-[1.2rem] font-bold no-underline rounded-[50px] shadow-[0_4px_15px_rgba(89,175,201,0.4)] transition-all duration-300 hover:bg-white hover:text-[#59afc9] hover:-translate-y-[55%] hover:shadow-[0_6px_20px_rgba(89,175,201,0.6)]"
+        >
+          انضم الآن
+        </a>
+      </div>
+    </section>
+    <!-- news -->
+    <section class="relative py-[5px] px-5 dir-rtl">
+      <div class="mx-auto max-w-[1200px] px-5 container">
+        <div>
+          <h1 class="text-[40px] text-black p-[30px] italic font-bold">
+            آخر المستجدات
+          </h1>
+        </div>
+
+        <div
+          class="relative z-10 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-[30px] news-grid"
+        >
+          <article
+            class="bg-white rounded-[5px] overflow-hidden news-card shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative h-[240px] card-image">
+              <img
+                src="../css/images/الاخبار/img-1.jpeg"
+                alt="Code Tracker"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-5 text-right card-content">
+              <div class="text-[0.8rem] text-[#35bfff] mb-[10px] card-meta">
+                <span class="meta-date">2025/11/21</span> |
+                <span class="meta-category">مشاريع الأعضاء</span>
+              </div>
+              <h4
+                class="text-[1.2rem] text-[#1a233a] font-bold mb-[10px] card-title"
+              >
+                متابعة تقدمك في كتابة الكود أصبحت أسهل!
+              </h4>
+              <p class="text-[0.9rem] text-[#666] leading-[1.6] card-text">
+                اكتب، تطور، وارتقِ بمستواك! دع أداة نُواه تتبع شغفك بدقة، لتتفرغ
+                لما تحبه في البرمجة.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-white rounded-[5px] overflow-hidden news-card shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative h-[240px] card-image">
+              <img
+                src="../css/images/الاخبار/img-2.png"
+                alt="نظام تسوق"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-5 text-right card-content">
+              <div class="text-[0.8rem] text-[#35bfff] mb-[10px] card-meta">
+                <span class="meta-date">2025/11/21</span> |
+                <span class="meta-category">مشاريع الأعضاء</span>
+              </div>
+              <h4
+                class="text-[1.2rem] text-[#1a233a] font-bold mb-[10px] card-title"
+              >
+                نظرة على نظام
+              </h4>
+              <p class="text-[0.9rem] text-[#666] leading-[1.6] card-text">
+                لقد تم إطلاق البوت الخاص بنظام التسوق وإدارة أعضاء الجروبات
+                المختلفة في تليجرام.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-white rounded-[5px] overflow-hidden news-card shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative h-[240px] card-image">
+              <img
+                src="../css/images/الاخبار/img-3.jpg"
+                alt="Educational Profit System"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-5 text-right card-content">
+              <div class="text-[0.8rem] text-[#35bfff] mb-[10px] card-meta">
+                <span class="meta-date">2025/11/21</span> |
+                <span class="meta-category">أنظمة النُواه</span>
+              </div>
+              <h4
+                class="text-[1.2rem] text-[#1a233a] font-bold mb-[10px] card-title"
+              >
+                نظرة على نظام الربح التعليمي
+              </h4>
+              <p class="text-[0.9rem] text-[#666] leading-[1.6] card-text">
+                نظرة أولية على أول نظام للربح من التدريس، عملية التعلم، وتنمية
+                الذكاء.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- welcome -->
+    <section
+      class="min-h-screen py-[200px] px-[12%] bg-[url('../css/images/BG-RG.jpg')] bg-no-repeat bg-top bg-cover dir-rtl flex items-center"
+    >
+      <div
+        class="flex flex-wrap items-center justify-around w-full gap-10 welcome-wrapper"
+      >
+        <div class="flex-1 min-w-[350px] welcome-info">
+          <h2
+            class="text-[5rem] text-[#fffbfb] mb-[15px] font-[800] leading-tight italic"
+          >
+            أهلًا بك في <br />
+            مشروع نواة
+          </h2>
+          <p
+            class="text-[1.1rem] text-[#fffbfb] leading-[1.6] welcome-description"
+          >
+            كوّن رحلتك مع فريق من المطورين والمبدعين وروّاد الأعمال، وكل من يؤمن
+            بأن الشغف والمعرفة والعمل يمكن أن يصنعوا نهضة حقيقية — تعلّموا،
+            طوّروا، وابتكروا معًا لبناء أثر يتجاوز حدود التخصص.
+          </p>
+
+          <button
+            class="bg-[#1a233a] text-white py-5 px-[35px] mt-[30px] mb-10 border-none rounded-[4px] font-bold cursor-pointer transition-all duration-300 hover:bg-[#59afc9] hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(89,175,201,0.2)]"
+          >
+            اطّلع على المزيد
+          </button>
+        </div>
+
+        <div
+          class="flex-1 flex flex-col items-center min-w-[400px] welcome-display"
+        >
+          <div
+            class="w-full aspect-video rounded-lg overflow-hidden shadow-[0_15px_35px_rgba(0,0,0,0.3)] bg-black"
+          >
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/mEn32xTBPVY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+              "
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- two-person -->
+    <section
+      class="min-h-screen py-[200px] px-[12%] bg-[url('../css/images/BG-blue.jpg')] min-h-screen relative bg-nawah-specialties bg-cover bg-center py-20 px-10 overflow-hidden flex items-center justify-center dir-rtl"
+    >
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-3 items-center z-10 relative"
+      >
+        <div class="w-full justify-self-start md:p-8 p-4">
+          <img
+            src="../css/images/اختر تخصصك/Female.png"
+            alt="Female Character"
+            class="w-full h-auto object-contain scale-110 md:scale-125"
+          />
+        </div>
+
+        <div class="w-full te px-4 md:px-0">
+          <p
+            class="text-[#1a233a] max-w-3xl mx-auto text-lg md:text-xl leading-relaxed mb-12 font-medium"
+          >
+            ابنِ أكوادك لتبني المستقبل، أو أطلق خيالك في تصميم تجربة تبهر
+            المستخدمين، أو خطط لمشاريع تُحدث فرقاً حقيقياً في العالم، هناك
+            تخصصات تناسب كل شغف وطموح.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-6"
+          >
+            <button
+              class="bg-[#1a233a] text-white py-5 px-[35px] mt-[30px] mb-10 border-none rounded-[4px] font-bold cursor-pointer transition-all duration-300 hover:bg-[#59afc9] hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(89,175,201,0.2)]"
+            >
+              اعثر على تخصصك
+            </button>
+            <a
+              href="#"
+              class="flex items-center gap-2 text-white font-bold text-lg hover:text-nawah-dark transition-colors duration-300"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              عرض جميع التخصصات
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full justify-self-end md:p-8 p-4">
+          <img
+            src="../css/images/اختر تخصصك/Male.png"
+            alt="Male Character"
+            class="w-full h-auto object-contain scale-110 md:scale-125"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Areai  -->
+    <section class="bg-[url('../css/images/BG-bink.jpg')] bg-cover bg-center py-20 px-[5%] dir-rtl">
+  
+  <div class="text-center mb-6 p-[30px]">
+    <h2 class="text-8xl md:text-7xl font-bold text-white italic tracking-wide">
+        <i>
+                  مساحة مشروع نواة
+
+        </i>
+    </h2>
+    <div class="w-24 h-1.5 bg-nawah-blue mx-auto mt-4 rounded-full"></div>
+  </div>
+
+  <div class="flex flex-wrap justify-center items-start gap-[30px] max-w-7xl mx-auto">
+    
+    <div class="w-[355px] text-center">
+      <div class="w-full h-[500px] overflow-hidden rounded-[5px] mb-5 shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+        <img src="../css/images/مساحة مشروع نواة/img-1.jpeg" alt="Explore" class="w-full h-full object-cover block" />
+      </div>
+      <p class="text-white text-lg leading-[1.6] m-0 px-[10px] font-medium">
+        استكشف مساحة نواة، وانضم إلى مجتمع من المبدعين الشغوفين بمجالاتهم، كلٌ منهم يسعى لرفع مستواه وصنع بصمته الخاصة.
+      </p>
+    </div>
+
+    <div class="w-[355px] text-center">
+      <div class="w-full h-[500px] overflow-hidden rounded-[5px] mb-5 shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+        <img src="../css/images/مساحة مشروع نواة/img-2.jpeg" alt="Events" class="w-full h-full object-cover block" />
+      </div>
+      <p class="text-white text-lg leading-[1.6] m-0 px-[10px] font-medium">
+        شارك في فعاليات نواة، وتحديات بناء المشاريع، واختبر متعة التعلم الجماعي الذي لا يُنسى.
+      </p>
+    </div>
+
+    <div class="w-[355px] text-center">
+      <div class="w-full h-[500px] overflow-hidden rounded-[5px] mb-5 shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+        <img src="../css/images/مساحة مشروع نواة/img-3.jpeg" alt="Experience" class="w-full h-full object-cover block" />
+      </div>
+      <p class="text-white text-lg leading-[1.6] m-0 px-[10px] font-medium">
+        نواة تكبر مع تجاربكم، نتعلّم من مشاكلكم، ونبني معًا تجربة تليق بطموحاتكم وتدفعكم خطوة أبعد كل يوم.
+      </p>
+    </div>
+
+  </div>
+</section>
+    <!-- gif-section -->
+    <section class="gif-section">
+      <div class="relative w-full overflow-hidden gif-container">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="block w-full h-full object-cover learning-gif"
+        >
+          <source src="../css/images/theweb2.mp4" type="video/mp4" />
+          متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="bg-[#111111] py-[60px] px-5 text-center text-white dir-rtl border-t border-[#333]"
+    >
+      <div class="flex justify-center gap-5 mb-[30px] footer-social-icons">
+        <a
+          href="#"
+          class="w-[45px] h-[45px] flex items-center justify-center bg-[#222] rounded-full text-[1.5rem] text-white transition-colors duration-300 hover:bg-[#444]"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          href="#"
+          class="w-[45px] h-[45px] flex items-center justify-center bg-[#222] rounded-full text-[1.5rem] text-white transition-colors duration-300 hover:bg-[#444]"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="#"
+          class="w-[45px] h-[45px] flex items-center justify-center bg-[#222] rounded-full text-[1.5rem] text-white transition-colors duration-300 hover:bg-[#444]"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          href="#"
+          class="w-[45px] h-[45px] flex items-center justify-center bg-[#222] rounded-full text-[1.5rem] text-white transition-colors duration-300 hover:bg-[#444]"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+
+      <h3 class="text-[1.8rem] font-bold mb-[15px] tracking-[1px]">
+        Nawah Project
+      </h3>
+
+      <p class="text-[0.9rem] text-[#aaaaaa] mb-[25px]">
+        جميع الحقوق والعلامات الخاصة بـ نواة محفوظة. — Nawah Project &copy; 2026
+      </p>
+
+      <div
+        class="flex flex-col sm:flex-row justify-center items-center gap-[15px] sm:gap-[25px] flex-wrap"
+      >
+        <a
+          href="#"
+          class="text-white no-underline text-[0.95rem] font-semibold transition-colors duration-300 hover:text-[#cccccc] hover:underline"
+          >سياسة الخصوصية</a
+        >
+        <a
+          href="#"
+          class="text-white no-underline text-[0.95rem] font-semibold transition-colors duration-300 hover:text-[#cccccc] hover:underline"
+          >شروط الاستخدام</a
+        >
+        <a
+          href="#"
+          class="text-white no-underline text-[0.95rem] font-semibold transition-colors duration-300 hover:text-[#cccccc] hover:underline"
+          >تفضيلات ملفات تعريف الارتباط</a
+        >
+      </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/Home.js"></script>
+  </body>
+</html>
