@@ -43,7 +43,10 @@ main {
 .logo {
   display: flex;
   align-items: center;
+<<<<<<< HEAD:src/css/news.css
   cursor: pointer;
+=======
+>>>>>>> 63321ad8167354fb78fcf67ecb32dd50495eae90:css/news.css
 }
 
 .logo img {
